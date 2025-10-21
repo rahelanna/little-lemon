@@ -1,0 +1,165 @@
+.about {
+  background-color: #edefee;
+  padding: 4rem 0;
+  overflow: hidden;
+  scroll-margin-top: 5.5rem;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333333;
+  margin: 0 0 0.5rem 0;
+}
+
+.about-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #495e57;
+  margin: 0 0 2rem 0;
+}
+
+.about-hours {
+  margin-bottom: 1.5rem;
+}
+
+.hours-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333333;
+}
+
+.hours-text {
+  color: #495e57;
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
+.about-description {
+  color: #495e57;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-images {
+  flex: 1 1 480px;
+  position: relative;
+  max-width: 450px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-top,
+.about-image-bottom {
+  width: 360px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.about-image-bottom {
+  top: 0;
+  right: -25%;
+  z-index: 1;
+}
+
+.about-image-top {
+  bottom: 0;
+  left: -15%;
+  z-index: 2;
+}
+
+/* Tablet layout: images side by side with minimal gap */
+@media (max-width: 1120px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .about-images {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+
+  .about-image-top,
+  .about-image-bottom {
+    position: relative;
+    width: 45%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+}
+
+/* Mobile layout: images stacked vertically */
+@media (max-width: 700px) {
+  .about {
+    padding: 2.5rem 0;
+  }
+
+  .about-container {
+    padding: 0 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-images {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .about-image-top,
+  .about-image-bottom {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 3 / 4;
+  }
+}

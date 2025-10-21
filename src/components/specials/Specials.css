@@ -1,0 +1,104 @@
+.specials {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+
+.specials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.specials-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+}
+
+.online-menu-btn {
+  background-color: #f4ce14;
+  color: #333333;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.online-menu-btn:hover {
+  background-color: rgb(73 94 87);
+  color: white;
+}
+
+.specials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 1536px) {
+  .specials {
+    margin-top: 10vh;
+  }
+}
+
+/* Improved mobile responsiveness for specials section */
+@media (max-width: 968px) {
+  .specials {
+    padding: 3rem 0;
+  }
+
+  .specials-container {
+    padding: 0 1.5rem;
+  }
+
+  .specials-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .specials-title {
+    font-size: 2rem;
+  }
+
+  .specials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .specials {
+    padding: 2.5rem 0;
+  }
+
+  .specials-container {
+    padding: 0 1rem;
+  }
+
+  .specials-title {
+    font-size: 1.75rem;
+  }
+
+  .online-menu-btn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .specials-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,389 @@
+.reservation-form-section {
+  background-color: #edefee;
+  padding: 80px 20px;
+}
+
+.reservation-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.form-section {
+  margin-bottom: 60px;
+}
+
+.form-section h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ee4b2b;
+  margin-top: 6px;
+}
+
+.error-message svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  color: #333333;
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group select::placeholder,
+.form-group textarea::placeholder {
+  color: #999999;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #495e57;
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #ee4b2b;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23333333' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 24px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Date picker wrapper */
+.date-picker-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-picker-wrapper input {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.calendar-icon-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 48px;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.calendar-icon-btn:hover {
+  background-color: #e5bf00;
+}
+
+.calendar-icon-btn svg {
+  width: 24px;
+  height: 24px;
+  color: #333333;
+}
+
+/* Form row for date, time, guests */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+/* Submit button */
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: 40px auto 0;
+  padding: 16px 32px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #495e57;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #f4ce14;
+  color: black;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Success message */
+.success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.success-message svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* React DatePicker custom styles */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+}
+
+.react-datepicker {
+  border: 2px solid #495e57;
+  border-radius: 8px;
+}
+
+.react-datepicker__header {
+  background-color: #495e57;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  color: #ffffff;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #f4ce14;
+  color: #333333;
+  font-weight: 700;
+}
+
+.react-datepicker__day:hover {
+  background-color: #f4ce14;
+  color: #333333;
+}
+
+/* React Phone Input custom styles */
+.form-group .react-tel-input {
+  width: 100%;
+}
+
+.form-group .react-tel-input .form-control {
+  width: 100%;
+  padding: 23px 16px 23px 48px;
+  font-size: 1rem;
+  color: #333333;
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group .react-tel-input .form-control::placeholder {
+  color: #999999;
+}
+
+.form-group .react-tel-input .form-control:focus {
+  outline: none;
+  border-color: #495e57;
+}
+
+.form-group .react-tel-input .form-control.error {
+  border-color: #ee4b2b;
+}
+
+.form-group .react-tel-input .flag-dropdown {
+  border: none;
+  background: transparent;
+  border-radius: 8px 0 0 8px;
+}
+
+.form-group .react-tel-input .selected-flag {
+  background-color: transparent !important;
+  border-right: 1px solid #cccccc;
+}
+
+.form-group .react-tel-input .selected-flag:hover,
+.form-group .react-tel-input .selected-flag:focus {
+  background-color: #f4ce14 !important;
+}
+
+.form-group .react-tel-input .country-list {
+  border-radius: 8px;
+  border: 2px solid #495e57;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group .react-tel-input .country-list .country {
+  padding: 8px 12px;
+}
+
+.form-group .react-tel-input .country-list .country:hover {
+  background-color: #f4ce14;
+  color: #333333;
+}
+
+/* Adjust for mobile */
+@media (max-width: 640px) {
+  .form-group .react-tel-input .form-control {
+    padding: 12px 14px 12px 46px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 968px) {
+  .reservation-form-section {
+    padding: 60px 20px;
+  }
+
+  .reservation-form {
+    padding: 0 30px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .form-section h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .reservation-form-section {
+    padding: 40px 15px;
+  }
+
+  .reservation-form {
+    padding: 0 15px;
+  }
+
+  .form-section {
+    margin-bottom: 40px;
+  }
+
+  .form-section h2 {
+    font-size: 1.375rem;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .error-message {
+    font-size: 0.8rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservation-hero h1 {
+    font-size: 2rem;
+  }
+
+  .reservation-hero p {
+    font-size: 0.9rem;
+  }
+
+  .form-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .calendar-icon-btn {
+    width: 44px;
+  }
+}
