@@ -4,8 +4,8 @@ export const links = [
     href: "#about",
   },
   {
-    title: "Reservations",
-    href: "/reservation",
+    title: "Booking",
+    href: "/booking",
   },
   {
     title: "Home Order",

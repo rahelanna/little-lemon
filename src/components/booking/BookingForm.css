@@ -1,9 +1,9 @@
-.reservation-form-section {
+.booking-form-section {
   background-color: #edefee;
   padding: 80px 20px;
 }
 
-.reservation-form {
+.booking-form {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 40px;
@@ -305,11 +305,11 @@
 
 /* Tablet */
 @media (max-width: 968px) {
-  .reservation-form-section {
+  .booking-form-section {
     padding: 60px 20px;
   }
 
-  .reservation-form {
+  .booking-form {
     padding: 0 30px;
   }
 
@@ -325,11 +325,11 @@
 
 /* Mobile */
 @media (max-width: 640px) {
-  .reservation-form-section {
+  .booking-form-section {
     padding: 40px 15px;
   }
 
-  .reservation-form {
+  .booking-form {
     padding: 0 15px;
   }
 
@@ -371,11 +371,11 @@
 }
 
 @media (max-width: 480px) {
-  .reservation-hero h1 {
+  .booking-hero h1 {
     font-size: 2rem;
   }
 
-  .reservation-hero p {
+  .booking-hero p {
     font-size: 0.9rem;
   }
 

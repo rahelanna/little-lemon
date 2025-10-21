@@ -26,10 +26,10 @@ describe("OrderHero component", () => {
     render(<OrderHero />);
 
     const link = screen.getByRole("link", {
-      name: /go to reservation page instead of ordering delivery/i,
+      name: /go to booking page instead of ordering delivery/i,
     });
     expect(link).toBeInTheDocument();
-    expect(link).toHaveAttribute("href", "/reservation");
+    expect(link).toHaveAttribute("href", "/booking");
   });
 
   it("renders courier image with alt text", () => {

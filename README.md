@@ -1,7 +1,7 @@
 # 🍋 Little Lemon Restaurant Website
 
 This project is a **fully responsive restaurant website** built as part of the **Meta Front-End Developer Capstone Project** on Coursera.  
-It showcases the **Little Lemon Restaurant**, featuring a modern design, interactive pages, and a functional reservation system.
+It showcases the **Little Lemon Restaurant**, featuring a modern design, interactive pages, and a functional booking system.
 
 ---
 
@@ -13,7 +13,7 @@ The app includes:
 - 🏠 **Home Page** – restaurant introduction and highlights
 - 🧾 **Online Menu** – interactive list of available dishes
 - 🛵 **Home Order / Delivery Info** – information about ordering and delivery
-- 📅 **Reservation System** – form for booking a table with validation
+- 📅 **Booking System** – form for booking a table with validation
 - 🔐 **Authentication Demo** – Sign up / Login simulation using **localStorage**
 - ⚙️ **Reusable Components** – modular structure with hooks, context, and shared UI parts
 - 🧪 **Unit Tests** – written with **Vitest** and **Testing Library**
@@ -34,7 +34,7 @@ src/
 │   ├── home-order/      # Delivery & order info
 │   ├── loading/         # Loading animations
 │   ├── online-menu/     # Menu section
-│   ├── reservation/     # Reservation form & logic
+│   ├── booking/         # Booking form & logic
 │   ├── special-card/    # Special offers cards
 │   └── specials/        # Specials section
 │
@@ -46,7 +46,7 @@ src/
 │   ├── online-menu.js   # Menu data
 │   ├── order-steps.js   # Home order steps
 │   ├── specials.js      # Special dishes
-│   └── time-slots.js    # Reservation slots
+│   └── time-slots.js    # Booking slots
 │
 ├── hooks/
 │   └── useDisableScroll.js
@@ -56,7 +56,7 @@ src/
 │   ├── HomeOrder.jsx
 │   ├── Login.jsx
 │   ├── OnlineMenu.jsx
-│   ├── Reservation.jsx
+│   ├── Booking.jsx
 │   └── Signup.jsx
 │
 ├── App.jsx
@@ -137,7 +137,7 @@ Each component and page has a corresponding `.test.jsx` file.
 |----------|--------------|
 | **Home Page** | Overview of the restaurant, call-to-action to reserve a table |
 | **Online Menu** | Dynamic list of menu items |
-| **Reservation** | Validated form with available time slots |
+| **Booking** | Validated form with available time slots |
 | **Login / Signup** | Local demo authentication using localStorage |
 | **Responsive Design** | Works across mobile, tablet, and desktop |
 | **Animations** | Built with Framer Motion |
@@ -152,7 +152,7 @@ Each component and page has a corresponding `.test.jsx` file.
 - **React Router DOM 7**
 - **Framer Motion** (animations)
 - **React Hook Form** (form handling)
-- **React Datepicker** (reservation date input)
+- **React Datepicker** (booking date input)
 - **React Phone Input 2** (contact field)
 - **Vitest + Testing Library** (unit testing)
 - **ESLint** (linting & code quality)

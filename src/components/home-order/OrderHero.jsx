@@ -16,8 +16,8 @@ const OrderHero = () => (
         </p>
         <a
           className="order-cta"
-          href="/reservation"
-          aria-label="Go to reservation page instead of ordering delivery"
+          href="/booking"
+          aria-label="Go to booking page instead of ordering delivery"
         >
           Reserve A Table Instead
         </a>

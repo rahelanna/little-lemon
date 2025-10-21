@@ -1,15 +1,15 @@
-.reservation-hero {
+.booking-hero {
   background-color: #495e57;
   padding: 60px 20px;
 }
 
-.reservation-hero-content {
+.booking-hero-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
-.reservation-hero h1 {
+.booking-hero h1 {
   font-size: 3.2rem;
   font-weight: 600;
   color: #f4ce14;
@@ -17,7 +17,7 @@
   line-height: 1;
 }
 
-.reservation-hero p {
+.booking-hero p {
   font-size: 1.125rem;
   color: #edefee;
   margin: 0;
@@ -27,38 +27,38 @@
 
 /* Tablet */
 @media (max-width: 968px) {
-  .reservation-hero {
+  .booking-hero {
     padding: 50px 20px;
   }
 
-  .reservation-hero-content {
+  .booking-hero-content {
     padding: 0 30px;
   }
 
-  .reservation-hero h1 {
+  .booking-hero h1 {
     font-size: 3rem;
   }
 
-  .reservation-hero p {
+  .booking-hero p {
     font-size: 1rem;
   }
 }
 
 /* Mobile */
 @media (max-width: 640px) {
-  .reservation-hero {
+  .booking-hero {
     padding: 40px 20px;
   }
 
-  .reservation-hero-content {
+  .booking-hero-content {
     padding: 0 20px;
   }
 
-  .reservation-hero h1 {
+  .booking-hero h1 {
     font-size: 2.5rem;
   }
 
-  .reservation-hero p {
+  .booking-hero p {
     font-size: 0.95rem;
   }
 }

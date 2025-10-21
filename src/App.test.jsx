@@ -15,8 +15,8 @@ vi.mock("./components/footer/Footer", () => ({
 vi.mock("./pages/Home", () => ({
   default: () => <div data-testid="mock-home">Home Page</div>,
 }));
-vi.mock("./pages/Reservation", () => ({
-  default: () => <div data-testid="mock-reservation">Reservation Page</div>,
+vi.mock("./pages/Booking", () => ({
+  default: () => <div data-testid="mock-booking">Booking Page</div>,
 }));
 vi.mock("./pages/Login", () => ({
   default: () => <div data-testid="mock-login">Login Page</div>,
@@ -60,13 +60,13 @@ describe("App component", () => {
     expect(screen.getByTestId("mock-home")).toBeInTheDocument();
   });
 
-  it("renders Reservation page on /reservation path", () => {
+  it("renders Booking page on /booking path", () => {
     render(
-      <MemoryRouter initialEntries={["/reservation"]}>
+      <MemoryRouter initialEntries={["/booking"]}>
         <App />
       </MemoryRouter>
     );
-    expect(screen.getByTestId("mock-reservation")).toBeInTheDocument();
+    expect(screen.getByTestId("mock-booking")).toBeInTheDocument();
   });
 
   it("renders Login page on /login path", () => {

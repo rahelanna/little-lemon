@@ -17,7 +17,7 @@ describe("MenuBottom component", () => {
     expect(section).toBeInTheDocument();
   });
 
-  it("renders navigation buttons for order and reservation", () => {
+  it("renders navigation buttons for order and booking", () => {
     setup();
     const orderLink = screen.getByRole("link", { name: /order delivery/i });
     const reserveLink = screen.getByRole("link", { name: /reserve a table/i });

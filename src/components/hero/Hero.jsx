@@ -20,7 +20,7 @@ export default function Hero() {
             traditional recipes served with a modern twist
           </p>
           <Link
-            to="/reservation"
+            to="/booking"
             className="reserve-btn"
             aria-label="Reserve a table at Little Lemon restaurant"
           >

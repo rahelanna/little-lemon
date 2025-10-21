@@ -1,10 +1,10 @@
-import ReservationForm from "./ReservationForm.jsx";
+import BookingForm from "./BookingForm.jsx";
 import { describe, it, expect } from "vitest";
 import { render } from "@testing-library/react";
 
-describe("ReservationForm component", () => {
+describe("BookingForm component", () => {
   it("renders without crashing", () => {
-    render(<ReservationForm />);
+    render(<BookingForm />);
     expect(true).toBe(true);
   });
 

@@ -15,10 +15,10 @@ const MenuBottom = () => (
           aria-label="Go to home delivery page"
         />
         <NavLink
-          href="/reservation"
+          href="/booking"
           title="Reserve a Table"
           className="menu-btn secondary"
-          aria-label="Go to table reservation page"
+          aria-label="Go to table booking page"
         />
       </div>
 

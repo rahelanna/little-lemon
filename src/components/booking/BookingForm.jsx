@@ -10,9 +10,9 @@ import { timeSlots } from "../../data/time-slots";
 
 import "react-phone-input-2/lib/style.css";
 import "react-datepicker/dist/react-datepicker.css";
-import "./ReservationForm.css";
+import "./BookingForm.css";
 
-const ReservationForm = () => {
+const BookingForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
@@ -43,14 +43,14 @@ const ReservationForm = () => {
 
   return (
     <section
-      className="reservation-form-section"
+      className="booking-form-section"
       role="form"
-      aria-labelledby="reservation-form-title"
-      aria-describedby="reservation-form-desc"
+      aria-labelledby="booking-form-title"
+      aria-describedby="booking-form-desc"
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="reservation-form"
+        className="booking-form"
         aria-live="polite"
       >
         {submitSuccess && (
@@ -58,17 +58,17 @@ const ReservationForm = () => {
             className="success-message"
             role="status"
             aria-live="polite"
-            aria-label="Reservation submitted successfully"
+            aria-label="Booking submitted successfully"
             data-testid="success-message" // <-- EZ AZ EGY SOR KELL
           >
             <Icon icon="mdi:check-circle" aria-hidden="true" />
-            Reservation submitted successfully!
+            Booking submitted successfully!
           </div>
         )}
 
         {/* Customer Information */}
         <div className="form-section">
-          <h2 id="reservation-form-title">Customer Information</h2>
+          <h2 id="booking-form-title">Customer Information</h2>
 
           {/* Name */}
           <div className="form-group">
@@ -166,9 +166,9 @@ const ReservationForm = () => {
           </div>
         </div>
 
-        {/* Reservation Details */}
-        <div className="form-section" aria-label="Reservation details">
-          <h2>Reservation Details</h2>
+        {/* Booking Details */}
+        <div className="form-section" aria-label="Booking details">
+          <h2>Booking Details</h2>
 
           <div className="form-row">
             {/* Date */}
@@ -277,8 +277,8 @@ const ReservationForm = () => {
             <input
               id="occasion"
               type="text"
-              placeholder="Purpose of the reservation"
-              aria-label="Occasion or reason for the reservation"
+              placeholder="Purpose of the booking"
+              aria-label="Occasion or reason for the booking"
               {...register("occasion")}
             />
           </div>
@@ -288,9 +288,9 @@ const ReservationForm = () => {
             <label htmlFor="specialRequests">Special Requests</label>
             <textarea
               id="specialRequests"
-              placeholder="Special requests for the reservation"
+              placeholder="Special requests for the booking"
               rows="4"
-              aria-label="Special requests for your reservation"
+              aria-label="Special requests for your booking"
               {...register("specialRequests")}
             />
           </div>
@@ -300,9 +300,9 @@ const ReservationForm = () => {
           type="submit"
           className="submit-btn"
           disabled={isSubmitting}
-          aria-label="Confirm reservation"
+          aria-label="Confirm Booking"
         >
-          Confirm Reservation
+          Confirm Booking
           <Icon icon="mdi:arrow-right" aria-hidden="true" />
         </button>
       </form>
@@ -310,4 +310,4 @@ const ReservationForm = () => {
   );
 };
 
-export default ReservationForm;
+export default BookingForm;

@@ -35,7 +35,7 @@ describe("Hero component", () => {
       name: /reserve a table at little lemon restaurant/i,
     });
     expect(reserveLink).toBeInTheDocument();
-    expect(reserveLink).toHaveAttribute("href", "/reservation");
+    expect(reserveLink).toHaveAttribute("href", "/booking");
   });
 
   it("renders hero image with alt text", () => {
